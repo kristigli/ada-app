@@ -1,0 +1,284 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,300;0,500;1,600&display=swap");
+
+html {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: black;
+    font-family: "Barlow", sans-serif;
+    line-height: 1.6;
+    padding: 0;
+    margin: 0;
+    @media (min-width: 768px) {
+        font-size: 1.2em;
+    }
+}
+
+#app {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+    overflow-x: auto;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    h3 {
+        font-size: 1em;
+        font-weight: 600;
+    }
+}
+
+.main {
+    font-weight: 300;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    padding: 0;
+    margin: 0;
+    .top-bar {
+        height: 30px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #383838;
+        font-weight: 500;
+        letter-spacing: 0.05em;
+    }
+    .nav-bar {
+        height: 70px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .burger-menu {
+            @media (min-width: 768px) {
+                display: none;
+            }
+            margin-left: 10px;
+            height: 35px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            .line {
+                width: 30px;
+                height: 3px;
+                background-color: white;
+                margin: auto;
+            }
+        }
+        .nav-logo {
+            margin: 10px;
+        }
+        .d-menu {
+            display: none;
+            @media (min-width: 768px) {
+                display: flex;
+            }
+            .links {
+                a {
+                    margin: 0 10px;
+                    text-decoration: none;
+                    color: white;
+                    font-weight: 500;
+                    letter-spacing: 0.05em;
+                }
+            }
+        }
+    }
+
+    footer {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 20px 0px;
+        .footer-inner {
+        }
+    }
+
+    .content {
+        width: 100%;
+        .part1 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 50px 0;
+            h1 {
+                margin-top: 10px;
+            }
+            h2 {
+                line-height: 1;
+                font-weight: 300;
+            }
+            .logo {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            .intro {
+                margin: 0 10px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                .intro-title {
+                    width: 70px;
+                    h2 {
+                        margin-bottom: 8px;
+                    }
+                    .intro-title-line {
+                        height: 1px;
+                        width: 100%;
+                        background-color: white;
+                        margin-left: 10px;
+                    }
+                }
+                .text {
+                    text-align: center;
+                    @media (min-width: 768px) {
+                        width: 70%;
+                    }
+                }
+            }
+        }
+        .part2 {
+            background-color: #fff;
+            color: #000;
+            width: 100%;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 600px;
+            .inner {
+                padding: 20px 10px;
+                @media (min-width: 768px) {
+                    width: 70%;
+                }
+            }
+        }
+        .part3 {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .services {
+                // padding: 20px 10px;
+                @media (min-width: 768px) {
+                    width: 70%;
+                }
+                .services-title {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    .services-title-inner {
+                        margin-bottom: 30px;
+                        width: 120px;
+                        h2 {
+                            margin-bottom: 8px;
+                        }
+                    }
+                    .services-title-line {
+                        height: 1px;
+                        width: 100%;
+                        background-color: white;
+                        margin-left: 10px;
+                    }
+                }
+                .services-list {
+                    display: flex;
+                    width: 100%;
+                    flex-wrap: wrap;
+                    justify-content: center;
+                    gap: 20px;
+                    .service {
+                        width: 45%;
+                        @media (min-width: 768px) {
+                            width: 30%;
+                        }
+                        .service-photo {
+                            img {
+                                aspect-ratio: 1/1;
+                                width: 100%;
+                                object-fit: cover;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .part4 {
+            width: 100%;
+            .instagram {
+                margin: 20px 10px;
+                background-color: white;
+                height: 700px;
+                color: black;
+                .instagram-title {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    .instagram-title-inner {
+                        margin-bottom: 30px;
+                        width: 120px;
+                    }
+                }
+            }
+        }
+        .part5 {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            .contact {
+                margin: 20px 10px;
+                @media (min-width: 768px) {
+                    display: flex;
+                    justify-content: center;
+                    gap: 20px;
+                    width: 70%;
+                }
+                .contact-inner {
+                    .contact-title {
+                        .contact-title-inner {
+                        }
+                    }
+                    .contact-form {
+                        margin-top: 50px;
+                        form {
+                            .form-group {
+                                display: flex;
+                                flex-direction: column;
+                                margin-bottom: 20px;
+                                input[type="text"],
+                                input[type="email"] {
+                                    height: 2.507em;
+                                }
+                            }
+                            .btn {
+                                height: 40px;
+                                width: 80px;
+                            }
+                        }
+                    }
+                }
+                .form-poster {
+                    display: flex;
+                    align-items: center;
+                    margin: 20px 0;
+                    img {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.placeholder {
+    width: 50px;
+}
