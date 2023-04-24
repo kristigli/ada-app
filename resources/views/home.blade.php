@@ -13,6 +13,7 @@
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link rel="dns-prefetch" href="//fonts.googleapis.com">
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
 
     @vite(['resources/sass/app.scss', 'resources/js/app.js'])
 
@@ -66,6 +67,15 @@
                     </svg>
                 </div>
                 <div class="d-menu">
+                    <div class="links">
+                        <a href="#" target="_blank">Google</a>
+                        <a href="#" target="_blank">Youtube</a>
+                        <a href="#" target="_blank">Facebook</a>
+                        <a href="#" target="_blank">Instagram</a>
+                        <a href="#" target="_blank">Twitter</a>
+                    </div>
+                </div>
+                <div class="m-menu animate__animated">
                     <div class="links">
                         <a href="#" target="_blank">Google</a>
                         <a href="#" target="_blank">Youtube</a>
@@ -222,7 +232,7 @@
                             </div>
                             <div class="service">
                                 <div class="service-photo">
-                                    <img src="{{asset('assets/helicopter.jpg')}}" alt="">
+                                    <img src="{{ asset('assets/helicopter.jpg') }}" alt="">
                                 </div>
                                 <div class="service-text">
                                     <h3>Helicopters</h3>
@@ -230,7 +240,7 @@
                             </div>
                             <div class="service">
                                 <div class="service-photo">
-                                    <img src="{{asset('assets/filmmaker.jpg')}}" alt="">
+                                    <img src="{{ asset('assets/filmmaker.jpg') }}" alt="">
                                 </div>
                                 <div class="service-text">
                                     <h3>Filmaker</h3>
@@ -238,7 +248,7 @@
                             </div>
                             <div class="service">
                                 <div class="service-photo">
-                                    <img src="{{asset('assets/personal-shopper.jpg')}}" alt="">
+                                    <img src="{{ asset('assets/personal-shopper.jpg') }}" alt="">
                                 </div>
                                 <div class="service-text">
                                     <h3>Personal shopper</h3>
@@ -270,7 +280,7 @@
                             </div>
                             <div class="service">
                                 <div class="service-photo">
-                                    <img src="{{asset('assets/nightlife2.jpg')}}" alt="">
+                                    <img src="{{ asset('assets/nightlife2.jpg') }}" alt="">
                                 </div>
                                 <div class="service-text">
                                     <h3>Nightlife Vip Bespoke Service</h3>

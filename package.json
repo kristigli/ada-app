@@ -10,6 +10,7 @@
         "vite": "^4.0.0"
     },
     "dependencies": {
+        "animate.css": "^4.1.1",
         "sass": "^1.59.3",
         "source-map-support": "^0.5.21"
     }

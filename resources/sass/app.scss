@@ -59,6 +59,7 @@ body {
             @media (min-width: 768px) {
                 display: none;
             }
+            z-index: 100;
             margin-left: 10px;
             height: 35px;
             display: flex;
@@ -74,6 +75,7 @@ body {
         .nav-logo {
             margin: 10px;
         }
+
         .d-menu {
             display: none;
             @media (min-width: 768px) {
@@ -88,6 +90,34 @@ body {
                     letter-spacing: 0.05em;
                 }
             }
+        }
+        .m-menu {
+            position: fixed;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            background-color: #79b4b7;
+            top: 0;
+            height: 100%;
+            visibility: hidden;
+            .links {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                gap: 50px;
+                a {
+                    text-decoration: none;
+                    color: white;
+                    font-weight: 500;
+                    letter-spacing: 0.05em;
+                }
+            }
+        }
+        .animate__fadeIn {
+            visibility: visible;
+        }
+        .animate__fadeOut {
+            visibility: visible;
         }
     }
 
